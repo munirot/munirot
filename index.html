@@ -1,12 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Munirot Thon</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/uikit.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/uikit.js"></script>
+  <script src="js/uikit-icons.js"></script>
+
+  <title>Munirot's Portfolio</title>
 </head>
+
 <body>
-    <h3>Hi there! I am Thon Munirot!</h3>
+  <!-- Navigation Bar uk-margin-small-left uk-margin-small-right -->
+  <nav class="nav-bar uk-navbar-container uk-visible@m" uk-navbar
+    uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+    <div class="uk-navbar-left">
+      <a href="" class="uk-navbar-item uk-logo uk-light"></a>
+    </div>
+    <div class="uk-navbar-right">
+      <ul class="uk-navbar-nav uk-light">
+        <li>
+          <a class="uk-button-text uk-text-capitalize" href="#about" uk-scroll>About</a>
+        </li>
+        <li>
+          <a class="uk-button-text uk-text-capitalize" href="#projects" uk-scroll>Projects</a>
+        </li>
+        <li>
+          <a class="uk-button-text uk-text-capitalize" href="mailto:" uk-scroll>Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Navigation Bar Ends  -->
+
+  <!-- Navigation Bar Mobile -->
+  <nav
+    class="uk-navbar-container uk-margin-small-left uk-margin-small-right uk-hidden@m uk-margin-xlarge-left uk-margin-xlarge-right"
+    uk-navbar uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+    <div class="uk-navbar-left">
+      <a href="" class="uk-navbar-item uk-logo uk-light"></a>
+    </div>
+    <div class="uk-navbar-right">
+      <ul class="uk-navbar-nav uk-light">
+        <li>
+          <button uk-toggle="target: #offcanvas-nav" type="button" uk-navbar-toggle-icon></button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Change This -->
+  <div id="offcanvas-nav" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+      <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+        <li class="uk-active"><a href="#" uk-scroll>Home</a></li>
+        <li class="uk-active"><a href="#about" uk-scroll>About</a></li>
+        <li class="uk-active"><a href="#education" uk-scroll>Education</a></li>
+        <li class="uk-active"><a href="#projects" uk-scroll>Projects</a></li>
+        <li class="uk-active"><a href="mailto:">Contact</a></li>
+        <!--- change to ur email-->
+      </ul>
+    </div>
+  </div>
+
+  <!-- Navigation Bar Mobile Ends -->
+  <!-- Home -->
+  <section class="grid-container">
+    <div class="">
+      <h1 class="uk-light uk-text-left">
+        Hi! this is Munirot Thon, an experienced Web Developer, an UI/UX
+        Designer, and an Machine Learning Geek.
+      </h1>
+
+      <a href="#about" class="uk-text-capitalize uk-button uk-button-secondary" uk-scroll>About Me</a>
+    </div>
+
+    <img src="./css/image/profile.jpg" alt="profile image" class="profile" />
+  </section>
+
+  <!-- Home Ends -->
+  <br />
+
+  <hr id="about" class="uk-margin-xlarge-left uk-margin-xlarge-right" />
+
+  <!-- About Me -->
+  <section class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
+    <h3 class="uk-margin-xlarge-left uk-light">About Me</h3>
+    <!-- Change here to ur paragraph -->
+    <p class="uk-margin-xlarge-left uk-margin-xlarge-right">
+      <b>Hello There!</b> here's a brief info of myself. I received a Computer
+      Science degree from the University of Cambodia at the end of 2021. During my bachelor's year, I had six
+      months of Web Development training from STEP Academy, as well as a two-week exchange program at Huawei's
+      headquarters in China, which enhanced my technological and innovative understanding.
+
+      <br /><br />Meanwhile, I spent two and a half years during my third year of collage as a junior Front-end
+      developer
+      at IG Tech Group, an IT services and consulting firm. I spent the majority of my time there working with the
+      Vue.js front-end web development framework. I also put in a lot of time working on backend development with Spring
+      Boot and the Node.js framework.
+
+      <br /><br />In early 2022, I was accepted to enroll at Chungbuk National
+      University in South Korea to pursue a Master's degree in Big Data. My
+      research interests include Machine Learning, Deep Learning, Object Detection, Data Analysis, and Data
+      Mining.
+    </p>
+
+    <a href="https://github.com/munirot" class="uk-margin-xlarge-left uk-light uk-button-text" uk-icon="github"
+      target="_blank"></a>
+    &nbsp;<a href="https://www.linkedin.com/in/munirot-thon/" class="uk-light uk-button-text" uk-icon="linkedin" target="_blank"></a>
+
+    <!-- About Me Ends -->
+  </section>
+
+  <!-- Projects Section -->
+  <hr class="uk-margin-xlarge-left uk-margin-xlarge-right" />
+  <section id="projects"
+    class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
+    <h3 class="uk-margin-xlarge-left uk-light">Projects</h3>
+    <p class="uk-margin-xlarge-left">Projects I have worked on</p>
+
+    <div class="uk-margin-xlarge-left uk-margin-xlarge-right">
+      <!-- Change all of this to ur projects -->
+      <div class="uk-margin uk-card uk-card-secondary uk-card-body">
+        <h4>Admin Dashboard</h4>
+        <p>
+          I've built admin dashboards for a variety of projects, mostly from scratch, using Vue.js or Nuxt.js and
+          integrating them with Restful API.
+        </p>
+      </div>
+
+      <div class="uk-margin uk-card uk-card-secondary uk-card-body">
+        <h4>Landing Page</h4>
+        <p>
+          I've created multiple landing pages using HTML/CSS and Javascript. Most recently is the Milio landing page.
+        </p>
+        <a class="uk-button-text uk-text-decoration-none" href="https://milio.io/" target="_blank">
+          <span uk-icon="icon: link"> </span> Milio Social
+        </a>
+      </div>
+
+      <div class="uk-margin uk-card uk-card-secondary uk-card-body">
+        <h4>E-commerce Website</h4>
+        <p>
+          I built an entire e-commerce website from scratch using Vue.js and some APIs with node.js.
+        </p>
+        <a class="uk-button-text uk-text-decoration-none" href="https://shop.kofi.com.kh/" target="_blank">
+          <span uk-icon="icon: link"> </span> Kofi Online Store
+        </a>
+      </div>
+    </div>
+
+    <br />
+  </section>
+  <hr class="uk-margin-xlarge-left uk-margin-xlarge-right" />
+  <!-- </div> -->
+  <!-- Projects Section Ends -->
 </body>
+
 </html>
