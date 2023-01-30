@@ -5,8 +5,17 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/unicons.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+  <!-- MAIN STYLE -->
+  <link rel="stylesheet" href="css/tooplate-style.css">
   <link rel="stylesheet" href="css/uikit.css" />
   <link rel="stylesheet" href="css/styles.css" />
+
   <script src="js/uikit.js"></script>
   <script src="js/uikit-icons.js"></script>
 
@@ -26,10 +35,13 @@
           <a class="uk-button-text uk-text-capitalize" href="#about" uk-scroll>About</a>
         </li>
         <li>
+          <a class="uk-button-text uk-text-capitalize" href="#education" uk-scroll>Educations</a>
+        </li>
+        <li>
           <a class="uk-button-text uk-text-capitalize" href="#projects" uk-scroll>Projects</a>
         </li>
         <li>
-          <a class="uk-button-text uk-text-capitalize" href="mailto:" uk-scroll>Contact</a>
+          <a class="uk-button-text uk-text-capitalize" href="#skills" uk-scroll>Knowledge</a>
         </li>
       </ul>
     </div>
@@ -59,7 +71,7 @@
         <li class="uk-active"><a href="#about" uk-scroll>About</a></li>
         <li class="uk-active"><a href="#education" uk-scroll>Education</a></li>
         <li class="uk-active"><a href="#projects" uk-scroll>Projects</a></li>
-        <li class="uk-active"><a href="mailto:">Contact</a></li>
+        <li class="uk-active"><a href="#skills">Skills</a></li>
         <!--- change to ur email-->
       </ul>
     </div>
@@ -74,7 +86,12 @@
         Designer, and an Machine Learning Geek.
       </h1>
 
-      <a href="#about" class="uk-text-capitalize uk-button uk-button-secondary" uk-scroll>About Me</a>
+      <!-- <div class="custom-btn-group mt-4">
+        <a href="./resume.pdf" class="btn mr-lg-2 custom-btn" target="_blank"><i class='uil uil-file-alt'></i> Download Resume</a>
+        <a href="#about" class="btn custom-btn custom-btn-bg custom-btn-link" uk-scroll>About Me</a>
+      </div> -->
+
+      <a href="#about" class="btn custom-btn custom-btn-bg custom-btn-link" uk-scroll>About Me</a>
     </div>
 
     <img src="./css/image/profile.jpg" alt="profile image" class="profile" />
@@ -91,15 +108,14 @@
     <!-- Change here to ur paragraph -->
     <p class="uk-margin-xlarge-left uk-margin-xlarge-right">
       <b>Hello There!</b> here's a brief info of myself. I received a Computer
-      Science degree from the University of Cambodia at the end of 2021. During my bachelor's year, I had six
-      months of Web Development training from STEP Academy, as well as a two-week exchange program at Huawei's
-      headquarters in China, which enhanced my technological and innovative understanding.
+      Science degree from the University of Cambodia at the end of 2021. During the second year of college, I received a
+      scholarship for a had six-months long Web Development training from STEP Academy, as well as a two-week exchange
+      program at Huawei's headquarters in China, which enhanced my technological and innovative understanding.
 
-      <br /><br />Meanwhile, I spent two and a half years during my third year of collage as a junior Front-end
-      developer
-      at IG Tech Group, an IT services and consulting firm. I spent the majority of my time there working with the
-      Vue.js front-end web development framework. I also put in a lot of time working on backend development with Spring
-      Boot and the Node.js framework.
+      <br /><br /> After completing the training from STEP Academy, I began working as a front-end developer at IG Tech
+      Group, an IT services and consulting firm. I spent most of my time there working with the front-end web
+      development framework Vue.js. After a year, I was able to transfer to the back-end team, where we mainly handled
+      API development and database management with technologies like Node.js and Spring Boot.
 
       <br /><br />In early 2022, I was accepted to enroll at Chungbuk National
       University in South Korea to pursue a Master's degree in Big Data. My
@@ -107,19 +123,105 @@
       Mining.
     </p>
 
-    <a href="https://github.com/munirot" class="uk-margin-xlarge-left uk-light uk-button-text" uk-icon="github"
-      target="_blank"></a>
-    &nbsp;<a href="https://www.linkedin.com/in/munirot-thon/" class="uk-light uk-button-text" uk-icon="linkedin" target="_blank"></a>
+    <a href="https://github.com/munirot" class="uk-margin-xlarge-left uk-light uk-button-text about-icon"
+      uk-icon="github" target="_blank"></a>
+    &nbsp;<a href="https://www.linkedin.com/in/munirot-thon/" class="uk-light uk-button-text about-icon"
+      uk-icon="linkedin" target="_blank"></a>
 
     <!-- About Me Ends -->
   </section>
 
+
+  <!-- FEATURES -->
+  <hr id="education" class="uk-margin-xlarge-left uk-margin-xlarge-right" />
+  <section
+    class="resume justify-content-center align-items-center uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom"
+    id="resume">
+    <div class="uk-margin-xlarge-left uk-margin-xlarge-right">
+      <div class="row uk-flex">
+
+        <div class="col-lg-6 col-12" style="padding-right: 45px;">
+          <h3 class="uk-light">Educations</h3>
+
+          <div class="timeline">
+            <div class="timeline-wrapper">
+              <div class="timeline-yr">
+                <span>Present</span>
+              </div>
+              <div class="timeline-info">
+                <h4>Master of Big Data</h4>
+                <small>Chungbuk National University / South Korea</small>
+                <ul>
+                  <li><strong>GPA: </strong>4.42/4.50</li>
+                  <li><strong>Research interest: </strong>Data Analysis, Data Mining, AI and NLP, Object Detection.</li>
+                </ul>
+                <p></p>
+              </div>
+            </div>
+
+            <div class="timeline-wrapper">
+              <div class="timeline-yr">
+                <span>2021</span>
+              </div>
+              <div class="timeline-info">
+                <h4>Bachelor of Computer Science</h4>
+                <small>University of Cambodia / Cambodia</small>
+                <ul>
+                  <li><strong>GPA: </strong>3.48/4.0</li>
+                </ul>
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-12" style="padding-left: 45px;">
+          <h3 class="uk-light">Work Experience</h3>
+
+          <div class="timeline">
+            <div class="timeline-wrapper">
+              <div class="timeline-yr">
+                <span>Present</span>
+              </div>
+              <div class="timeline-info">
+                <h4>Research Assistance</h4>
+                <small>Big Data and AI Lab / Chungbuk National University, South Korea</small>
+                <p>Assist professor on various projects that were assigned to, including:</p>
+                <ul>
+                  <li>Collected, cleansed, and provided modeling and analyses.</li>
+                  <li>Assists some Deep-Learning research projects.</li>
+                  <li>Conducting research on big data governance.</li>
+                  <li>Conducting research on Artificial intelligence and natural language processing.</li>
+                </ul>
+                <p></p>
+              </div>
+            </div>
+
+            <div class="timeline-wrapper">
+              <div class="timeline-yr">
+                <span>2022</span>
+              </div>
+              <div class="timeline-info">
+                <h4>Software Developer</h4>
+                <small>IG Tech Group / Phnom Penh, Cambodia</small>
+                <p>Develop user friendly and effective web-based applications. Designed and developed custom web
+                  applications specific to the client's needs using Vue.js along with the Node.js application framework.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
   <!-- Projects Section -->
-  <hr class="uk-margin-xlarge-left uk-margin-xlarge-right" />
-  <section id="projects"
-    class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
+  <hr id="projects" class="uk-margin-xlarge-left uk-margin-xlarge-right" />
+  <section class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
     <h3 class="uk-margin-xlarge-left uk-light">Projects</h3>
-    <p class="uk-margin-xlarge-left">Projects I have worked on</p>
+    <p class="uk-margin-xlarge-left">Projects I have worked on :</p>
 
     <div class="uk-margin-xlarge-left uk-margin-xlarge-right">
       <!-- Change all of this to ur projects -->
@@ -154,9 +256,70 @@
 
     <br />
   </section>
-  <hr class="uk-margin-xlarge-left uk-margin-xlarge-right" />
   <!-- </div> -->
+
+
+  <!-- Skills -->
+  <hr id="skills" class="uk-margin-xlarge-left uk-margin-xlarge-right" />
+  <section class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
+    <h3 class="uk-margin-xlarge-left uk-light">Technical Knowledge</h3>
+    <p class="uk-margin-xlarge-left">What I've come across so far (doesn't mean that I'm skillful in all that mentioned below ^.^)</p>
+
+    <div class="uk-margin-xlarge-left uk-margin-xlarge-right">
+      <!-- Change all of this to ur projects -->
+      <div class="uk-margin uk-card uk-card-secondary uk-card-body">
+        <h4>Languages and Databases</h4>
+        <p class="skill-btn uk-text-capitalize uk-button uk-button-secondary">HTML</p>
+        <p class="skill-btn uk-text-capitalize uk-button uk-button-secondary">CSS</p>
+        <p class="skill-btn uk-text-capitalize uk-button uk-button-secondary">Javascript</p>
+        <p class="skill-btn uk-text-capitalize uk-button uk-button-secondary">Python</p>
+        <p class="skill-btn uk-text-capitalize uk-button uk-button-secondary">Java</p>
+        <p class="skill-btn uk-text-capitalize uk-button uk-button-secondary">R</p>
+        <p class="skill-btn uk-text-capitalize uk-button uk-button-secondary">MySQL</p>
+        <p class="skill-btn uk-text-capitalize uk-button uk-button-secondary">MongoDB</p>
+        <p class="skill-btn uk-text-capitalize uk-button uk-button-secondary">Shell Scripting</p>
+        <p class="skill-btn uk-text-capitalize uk-button uk-button-secondary">Dart</p>
+        <p class="skill-btn uk-text-capitalize uk-button uk-button-secondary">Kotlin</p>
+
+        <br /><br />
+        <hr/>
+        <h4>Libraries</h4>
+        <p class="skill-btn uk-text-capitalize uk-button uk-button-secondary">jQuery</p>
+        <p class="skill-btn uk-text-capitalize uk-button uk-button-secondary">ReactJS</p>
+        <p class="skill-btn uk-text-capitalize uk-button uk-button-secondary">Nuxt.js</p>
+        <p class="skill-btn uk-text-capitalize uk-button uk-button-secondary">Numpy</p>
+        <p class="skill-btn uk-text-capitalize uk-button uk-button-secondary">Pandas</p>
+        <p class="skill-btn uk-text-capitalize uk-button uk-button-secondary">matplotlib</p>
+        <p class="skill-btn uk-text-capitalize uk-button uk-button-secondary">scikit-learn</p>
+
+        <br /><br />
+        <hr/>
+        <h4>Frameworks</h4>
+        <p class="skill-btn uk-text-capitalize uk-button uk-button-secondary">Node.js</p>
+        <p class="skill-btn uk-text-capitalize uk-button uk-button-secondary">Vue.js</p>
+        <p class="skill-btn uk-text-capitalize uk-button uk-button-secondary">Bootstrap</p>
+        <p class="skill-btn uk-text-capitalize uk-button uk-button-secondary">Flask</p>
+        <p class="skill-btn uk-text-capitalize uk-button uk-button-secondary">TensorFlow</p>
+
+        <br /><br />
+        <hr/>
+        <h4>Others</h4>
+        <p class="skill-btn uk-text-capitalize uk-button uk-button-secondary">Git</p>
+        <p class="skill-btn uk-text-capitalize uk-button uk-button-secondary">Firebase</p>
+      </div>
+    </div>
+    <br />
+  </section>
   <!-- Projects Section Ends -->
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/Headroom.js"></script>
+  <script src="js/jQuery.headroom.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/smoothscroll.js"></script>
+  <script src="js/custom.js"></script>
 </body>
 
 </html>
